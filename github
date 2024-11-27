@@ -1,0 +1,60 @@
+Git ve Github Nedir?
+Git: Bir geri dönüş noktası. Yaptıklarını kontrol edip kaydeden bir sistemdir. 
+Git ve GitHub bilgileri saklamak ve paylaşmak için çok önemli ve hemen hemen her programda kullanılır. Linux ve Mac’ te kurulu geliyor fakat Windows’ ta kurmak gereklidir.
+Kodlar
+Ls =  Dökümanları ve klasörleri göstermek için kullanılır
+Pwd =  İçinde bulunduğumuz dosyayı göstermek içindir
+cd dosya/klasör ismi =   gitmek istenilen klasöre götürür.
+cd .. = Bir önceki klasöre geri dön
+mkdir klasörismi = klasör oluşturur.
+touch dosyaadi = Dosya oluşturur.
+rm dosyaismi = dosyaları siler
+rm -rf klasörismi = klasörü siler.
+Git = yardım dökümantasyonu açılır.
+git config --global user.name "kullaniciadi" = Projelerde kullanıcı adını belli etmek için değiştirir.
+git config user.name = Kullanıcı adını teyit etmek için.
+git config --global user.email  kullaniciadi@gmail.com = Projelerde kullanılan Gmail adresini değiştirir.
+git config user.email = Gmail adresini teyit eder.
+
+Yaptığımız çalışmalarda ilerlerken kullandığımız noktalara “commit” denir.
+Çalışmada birden fazla yol olabilir. Farklı komutları ayrı yazarak birleştirebiliriz. Buna “Branch” denir.
+
+git status = Git’ in güncel durumunu göster.
+git init = Klasörün Git’ le bağlantısını kurmak için.
+ls -la =  Gizli klasörleri gösterir.
+git add dosyaadi = Dosyaları Git’ e ekler.
+git commit -m “commit içeriği” —> Dosyaları commit’e gönderip isimlerini yazıyoruz.
+touch .gitignore = İstediğimiz dosyanın gizli kalması için.
+HEAD = Git’ te güncel konumumuzu öğrenmek için kullanılıyor.
+Git branch feat = Feat isimli bir branch açar.
+Git switch master = Master’ a geri dönüş sağlandı.
+ Git merge feat = Feat isimşi branch’ i birleştirir.
+Git branch = Güncel Branchler’ i göstermek için.
+Fast Forwarding = Bir branch’ te değişiklik yapıp diğer branch ile birleştirir. İleri sarar
+Git restore dosyaismi = Dosyayı en son kaydedilen yere döndürür. 
+Gith stash = Yapılan değişiklikleri depolar.
+Git stash pop = Yapılan değişikliği geri alır.
+Git stash list = Güncel Stashler’ i göstemek için.
+Git stash apply stash@(numara) = Eklemek istenen stash’ i eklemek için.
+Git stash clear = Bütün stashler’ i silmek için.
+Git checkout comit_id = Geri dönülmek istenen commit’ in ID numarasını yazar.
+Detached HEAD = Branch ve Head bağlı değil ve geri dönüş için “git switch “yaz.
+git reset commit_id = Gidilen committen sonra oluşan commitleri silmek için.
+git reset —hard commit_id = Gidilen commit’ tek oluşan commitleri ve içerikli birlikte siler.
+git revert commit_id = İstenen commit ID’ yi geri almak için (logların uyuşması için) yeni bir commit oluşturulabilir.
+git diff = farklı olanları gösterir
+git diff HEAD = EN son yapılan commit dosyası ile arasındaki farkı gösterir.
+Git diff commit_id commit_id = İki commit arasındaki farkı gösterir.(Boşluk yerine “..” koyulabilir )
+Git rebase master = İşe yaramayan commitleri silmek için (Feat içinde çalıştırılıyor)
+GitHub nedir?
+Git remote add origin internet_adresi = Git ‘ in hangi adresene ekleneceğini seçer.
+Git push -u origin master = Şimdiki commitleri gönderilen adrese yollar. (Master branch’ de)
+git fetch origin master = Origin’ den Master’ a gelir. (Dosyalar lokale geliyor ama dosya aynı)
+git branch -r = Origindeki Branchler’ e bakmak için.
+Git cheechout origin/master = Origin’ deki branclere geçmek için
+Git pull = git fetch + git merge (Git’ teki  değişiklikleri al ve branch ile birlşeitr)
+Git pull origin master = GitHub’ daki değişiklikleri master branc’ imiz ile birleştirmek için.
+Git clone projeadresi = Açık kaynaktaki projeleri kendi bilgisayarımızda indirmek için.
+
+
+
